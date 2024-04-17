@@ -30,17 +30,17 @@
         <header id="header">
             <div class="header__top-area">
                 <div class="top-area__left">
-                    <div id="topShortCutArea" class="left__btn">
-                        <button class="btn__icon btn__icon--short-cut" type="button">
+                    <div id="topShortCutArea" class="left__btn" tabindex="3">
+                        <button class="btn__icon btn__icon--short-cut" type="button" tabindex="-1">
                             <span class="blind">바로가기</span>
                         </button>
                         <div class="btn__info btn__info--short-cut">
                             <span>바로가기</span>
                         </div>
                     </div>
-                    <div id="topPayArea" class="left__btn">
+                    <div id="topPayArea" class="left__btn" tabindex="3">
                         <a class="btn__icon btn__icon--pay" href="https://new-m.pay.naver.com/" target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer" tabindex="-1">
                             <span class="blind">네이버페이</span>
                         </a>
                         <div class="btn__info btn__info--pay">
@@ -49,16 +49,16 @@
                     </div>
                 </div>
                 <div class="top-area__right">
-                    <div id="topTalkArea" class="right__btn">
-                        <button class="btn__icon btn__icon--talk" type="button">
+                    <div id="topTalkArea" class="right__btn" tabindex="3">
+                        <button class="btn__icon btn__icon--talk" type="button" tabindex="-1">
                             <span class="blind">네이버톡</span>
                         </button>
                         <div class="btn__info btn__info--talk">
                             <span>네이버톡</span>
                         </div>
                     </div>
-                    <div id="topNotifiArea" class="right__btn">
-                        <button class="btn__icon btn__icon--notifi" type="button">
+                    <div id="topNotifiArea" class="right__btn" tabindex="3">
+                        <button class="btn__icon btn__icon--notifi" type="button" tabindex="-1">
                             <span class="blind">알림</span>
                         </button>
                         <div class="btn__info btn__info--notifi">
@@ -70,7 +70,7 @@
             <div class="header__main-area">
                 <div class="search">
                     <div class="search__logo">
-                        <a href="#">
+                        <a href="#" tabindex="1">
                             <svg id="search-logo-icon" class="search-logo-icon" data-name="search-logo-icon"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <polygon class="cls-1"
@@ -81,14 +81,14 @@
                     <form class="search__form">
                         <div class="search__input-group">
                             <label class="search__label" for="search"></label>
-                            <input id="search" class="search__input" type="search" />
+                            <input id="search" class="search__input" type="search" tabindex="1" />
                         </div>
                         <div class="search__btns">
-                            <button class="search__btn--tool" type="button">
+                            <button class="search__btn--tool" type="button" tabindex="1">
                                 <span></span>
                             </button>
-                            <button class="search__btn--list" type="button"></button>
-                            <button class="search__btn--submit" type="submit">
+                            <button class="search__btn--list" type="button" tabindex="1"></button>
+                            <button class="search__btn--submit" type="submit" tabindex="1">
                                 <svg id="search-lens-icon" class="search-lens-icon" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 47.69 47.69">
                                     <path class="cls-1"
@@ -100,78 +100,79 @@
                     </form>
                 </div>
                 <div class="header__banner">
-                    <a href="https://blog.naver.com/mpvalove/223387348347" target="_blank" rel="noopener noreferrer">
-                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240227_1095/upload_1709016723666cyiLT.png"
-                            width="162" height="40" alt="서해수호의 날">
+                    <a href="https://nid.naver.com/membership/join?dtm_detail=A&dtm_source=pc_upper&dtm_medium=mktatrb&dtm_campaign=2404-shopping-009&pcode=pc_upper_A&campaign_id=2404-shopping-009&channel_id=pc_upper&material=A"
+                        target="_blank" rel="noopener noreferrer" tabindex="1">
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20240417_1095/upload_1713338905924t0D07.png"
+                            width="162" height="40" alt="네이버멤버십 신규 가입 혜택 받기">
                     </a>
                 </div>
             </div>
             <nav class="header__nav">
                 <ul class="header__service">
                     <li class="service__list">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="service__item">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="service__item" tabindex="2">
                             <span class="service__icon service__icon--mail"></span>
                             <span class="service__name">메일</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://section.cafe.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://section.cafe.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--cafe"></span>
                             <span class="service__name">카페</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://section.blog.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://section.blog.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--blog"></span>
                             <span class="service__name">블로그</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://shopping.naver.com/home" target="_blank" rel="noopener noreferrer"
+                        <a href="https://shopping.naver.com/home" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--shop"></span>
                             <span class="service__name">쇼핑</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://news.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://news.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--news"></span>
                             <span class="service__name">뉴스</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://finance.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://finance.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--stock"></span>
                             <span class="service__name">증권</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://land.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://land.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--house"></span>
                             <span class="service__name">부동산</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://map.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://map.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--map"></span>
                             <span class="service__name">지도</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://comic.naver.com/index" target="_blank" rel="noopener noreferrer"
+                        <a href="https://comic.naver.com/index" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon service__icon--webtoon"></span>
                             <span class="service__name">웹툰</span>
                         </a>
                     </li>
                     <li class="service__list">
-                        <a href="https://chzzk.naver.com/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://chzzk.naver.com/" target="_blank" rel="noopener noreferrer" tabindex="2"
                             class="service__item">
                             <span class="service__icon--chzzk">
                                 <img src="https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png"
@@ -181,7 +182,7 @@
                         </a>
                     </li>
                     <li class="service__list">
-                        <div class="service__item">
+                        <div class="service__item" tabindex="2">
                             <span class="service__icon service__icon--more"></span>
                         </div>
                     </li>
@@ -199,26 +200,945 @@
                     </article>
                     <article class="left__content left__content--news">
                         <ul class="tab__menu">
-                            <li class="tab__btn">
-
+                            <li class="tab__btn tab__btn-and">
+                                <button type="button" id="tab__active">뉴스스탠드</button>
+                                <div class="news__info-pc">
+                                    <span>예전 PC와 동일한 방식으로 보기</span>
+                                </div>
                             </li>
-                            <li class="tab__btn"></li>
-                            <li class="tab__btn"></li>
-                            <li class="tab__btn"></li>
-                            <li class="tab__btn"></li>
+                            <li class="tab__btn">
+                                <button type="button">언론사편집</button>
+                                <div class="news__info-mobile">
+                                    <span>모바일과 동일한 방식으로 보기</span>
+                                </div>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">엔터</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">
+                                    <span>스포츠</span>
+                                    <span class="tab__live">LIVE</span>
+                                </button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">경제</button>
+                            </li>
                         </ul>
                         <div class="tab__content">
-                            <div class="tab__item">
-
+                            <div class="tab__item tab__item-news">
+                                <div class="news__header">
+                                    <div class="news__header-nav">
+                                        <a href="#" class="news__header-more">전체언론사</a>
+                                        <ul class="news__header-desc">
+                                            <li>
+                                                <a href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y"
+                                                    target="_blank" rel="noopener noreferrer">연합뉴스</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0014614199"
+                                                    target="_blank" rel="noopener noreferrer">코스피, 삼성전자 호실적에도 2,710대
+                                                    후퇴...코스닥도 약세</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="news__header-home">
+                                        <li><a href="https://newsstand.naver.com/" target="_blank"
+                                                rel="noopener noreferrer">뉴스스탠드</a>
+                                        </li>
+                                        <li><a href="https://news.naver.com/" target="_blank"
+                                                rel="noopener noreferrer">뉴스홈</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="news__list">
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=011" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2019/logo/011.png"
+                                                alt="서울경제">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=214" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/214.png"
+                                                alt="MBC">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=056" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/056.png"
+                                                alt="KBS">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=904" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/904.png"
+                                                alt="JTBC">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=044" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/044.png"
+                                                alt="코리아헤럴드">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=052" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/052.png"
+                                                alt="YTN">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=422" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="	https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png"
+                                                alt="연합뉴스">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=055" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/055.png"
+                                                alt="SBS">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=005" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/005.png"
+                                                alt="국민일보">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=120" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/120.png"
+                                                alt="EBN">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=964" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/964.png"
+                                                alt="이뉴스투데이">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=009" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png"
+                                                alt="메일경제">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=057" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/057.png"
+                                                alt="MBN">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=990" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/990.png"
+                                                alt="주간조선">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=028" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="	https://s.pstatic.net/static/newsstand/up/2024/0219/nsd145828169.png"
+                                                alt="한겨레">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=327" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/up/2024/0124/nsd95528325.png"
+                                                alt="뉴데일리">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=387" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/up/2022/0331/nsd155937506.png"
+                                                alt="인천일보">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=032" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/032.png"
+                                                alt="경향신문">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=108" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/108.png"
+                                                alt="스타뉴스">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=947" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/947.png"
+                                                alt="조이뉴스">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=911" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/911.png"
+                                                alt="농민신문">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=117" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/117.png"
+                                                alt="마이데일리">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=326" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/326.png"
+                                                alt="KBS world">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                    <div class="news__list-item">
+                                        <a href="https://newsstand.naver.com/?list&pcode=954" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/954.png"
+                                                alt="CNB뉴스">
+                                            <span>구독</span>
+                                            <span>기사보기</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news__footer">
+                                    <div class="news__footer-page">
+                                        <button class="news__footer-prev" type="button"></button>
+                                        <button class="news__footer-desc" type="button"><span>언론사</span>더보기
+                                            1<span>/4</span></button>
+                                        <button class="news__footer-next" type="button"></button>
+                                    </div>
+                                    <div class="news__footer-view">
+                                        <button class="news__footer-list" type="button"></button>
+                                        <button class="news__footer-thumb" type="button"></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab__item"></div>
-                            <div class="tab__item"></div>
-                            <div class="tab__item"></div>
-                            <div class="tab__item"></div>
+                            <div class="tab__item tab__item-media"></div>
+                            <div class="tab__item tab__item-enter"></div>
+                            <div class="tab__item tab__item-sport"></div>
+                            <div class="tab__item tab__item-economy"></div>
                         </div>
                     </article>
-                    <article class="left__content left__content--shop"></article>
-                    <article class="left__content left__content--recomend"></article>
+                    <article class="left__content left__content--shop">
+                        <ul class="tab__menu">
+                            <li class="tab__btn">
+                                <button type="button" id="tab__active">쇼핑</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">맨즈</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">원쁠딜</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">쇼핑라이브</button>
+                            </li>
+                        </ul>
+                        <div class="tab__view">
+                            <span>1</span>
+                            <span>/13</span>
+                            <button class="tab__view-prev"></button>
+                            <button class="tab__view-next"></button>
+                        </div>
+                        <div class="tab__content">
+                            <div class="tab__item tab__item-shop">
+                                <div class="shop__list">
+                                    <div class="shop__list-1">
+                                        <div class="shop__mall">
+                                            <ul class="shop__mall-1">
+                                                <li>
+                                                    <a href="https://www.coupang.com/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-coupang">쿠팡</a>
+                                                    <a href="https://www.gmarket.co.kr/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-gmarket">G마켓</a>
+                                                    <a href="https://www.auction.co.kr/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-auction">옥션</a>
+                                                    <a href="https://www.11st.co.kr/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-11st">11번가</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="shop__mall-2">
+                                                <li>
+                                                    <a href="https://www.ssg.com/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-ssg">SSG닷컴</a>
+                                                    <a href="https://www.oliveyoung.co.kr/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-oliveyoung">올리브영</a>
+                                                    <a href="https://display.cjonstyle.com/" target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        class="shop__mall-cjonstyle">CJ온스타일</a>
+                                                    <a href="https://front.wemakeprice.com/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-wemakeprice">위메프</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="shop__mall-3">
+                                                <li>
+                                                    <a href="https://with.gsshop.com/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-gsshop">GS SHOP</a>
+                                                    <a href="https://www.halfclub.com/" target="_blank"
+                                                        rel="noopener noreferrer" class="shop__mall-halfclub">하프클럽</a>
+                                                    <a href="https://www.fashionplus.co.kr/" target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        class="shop__mall-fashionplus">패션플러스</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <ul class="shop__menu">
+                                            <li>
+                                                <a href="https://shopping.naver.com/home"
+                                                    class="shop__menu-item shop__menu-item--shop" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <div class="shop__menu--img"></div>
+                                                    <div class="shop__menu--text">쇼핑홈</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fshopping.naver.com%2Fmy%2Fwritable-reviews"
+                                                    class="shop__menu-item shop__menu-item--review" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <div class="shop__menu--img"></div>
+                                                    <div class="shop__menu--text">리뷰적립</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://nid.naver.com/nidlogin.login?url=http%3A%2F%2Fnew-m.pay.naver.com%2Fpcpay%3FserviceGroup%3DSHOPPING%26page%3D1"
+                                                    class="shop__menu-item shop__menu-item--pay" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <div class="shop__menu--img"></div>
+                                                    <div class="shop__menu--text">주문</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://nid.naver.com/nidlogin.login?svctype=1&url=https%3A%2F%2Fshopping.naver.com%2Fcart"
+                                                    class="shop__menu-item shop__menu-item--cart" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <div class="shop__menu--img"></div>
+                                                    <div class="shop__menu--text">장바구니</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="shop__ad">
+                                            <a href="https://www.jestina.co.kr/pages/newraffia?utm_source=Naver&utm_medium=PC.focus&utm_campaign=JEACEM4BS904BE260&cafe_mkt=nvs_focus07&NaPm=ct%3Dlv25vvhc%7Cci%3Daf3c80c5e49406c338870197bfd5215189533178%7Ctr%3Dsbsf%7Csn%3D316128%7Cic%3D%7Chk%3D426f4f19208c924c3b3f6795bd34d152c304a852"
+                                                class="shop__ad-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240416_12/2b1444b1-08f2-433c-b487-895bcec22ce6.jpg"
+                                                    alt="제이에스티나 프리오더 20%">
+                                            </a>
+                                            <a href="https://www.jestina.co.kr/pages/newraffia?utm_source=Naver&utm_medium=PC.focus&utm_campaign=JEACEM4BS904BE260&cafe_mkt=nvs_focus07&NaPm=ct%3Dlv25vvhc%7Cci%3Daf3c80c5e49406c338870197bfd5215189533178%7Ctr%3Dsbsf%7Csn%3D316128%7Cic%3D%7Chk%3D426f4f19208c924c3b3f6795bd34d152c304a852"
+                                                class="shop__ad-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>미리 준비하는 여름! 프리오더 20%</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__list-2">
+                                        <div class="shop__item">
+                                            <a href="https://brand.naver.com/pulmuone_cooking/products/8747852688?NaPm=ct%3Dlv23ppfs%7Cci%3D228ede1b21102de766cb34685a0f250f8cc30ef1%7Ctr%3Dsbsh%7Csn%3D976366%7Cic%3D%7Chk%3D76829ef6c46b725d2e63336464734caa097879a8"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>친구네 갔더니</p>
+                                                <p>이런게 있더라?</p>
+                                            </a>
+                                            <a href="https://brand.naver.com/pulmuone_cooking/products/8747852688?NaPm=ct%3Dlv23ppfs%7Cci%3D228ede1b21102de766cb34685a0f250f8cc30ef1%7Ctr%3Dsbsh%7Csn%3D976366%7Cic%3D%7Chk%3D76829ef6c46b725d2e63336464734caa097879a8"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240412_22/db202ec4-024b-416f-9bfe-2b65a2cc5636.jpg?type=f294_378"
+                                                    alt="친구네 갔더니 이런게 있더라?">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://dshop.dietshin.com/goods/view.asp?g=14210&JP=3&utm_source=naver&utm_medium=shoppingbox&utm_campaign=naver_shoppingbox&NaPm=ct%3Dlv255c8g%7Cci%3D9a78183b70d35437d790839f5560557bc16e633e%7Ctr%3Dsbsh%7Csn%3D313373%7Cic%3D%7Chk%3Daee972ce0729de3e1a93619e1ca7d80fe2a163a3"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>말랑모찌 감촉</p>
+                                                <p>덮으면 숙면예약</p>
+                                            </a>
+                                            <a href="https://dshop.dietshin.com/goods/view.asp?g=14210&JP=3&utm_source=naver&utm_medium=shoppingbox&utm_campaign=naver_shoppingbox&NaPm=ct%3Dlv255c8g%7Cci%3D9a78183b70d35437d790839f5560557bc16e633e%7Ctr%3Dsbsh%7Csn%3D313373%7Cic%3D%7Chk%3Daee972ce0729de3e1a93619e1ca7d80fe2a163a3"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240404_28/e0d00114-13c4-473a-8505-b704417795b8.jpg?type=f294_378"
+                                                    alt="말랑모찌 감촉, 덮으면 숙면예약">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://brand.naver.com/pulmuone_cooking/products/8747852688?NaPm=ct%3Dlv23ppfs%7Cci%3D228ede1b21102de766cb34685a0f250f8cc30ef1%7Ctr%3Dsbsh%7Csn%3D976366%7Cic%3D%7Chk%3D76829ef6c46b725d2e63336464734caa097879a8"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>직장인들 15+15</p>
+                                                <p>맛있어서 또사요</p>
+                                            </a>
+                                            <a href="https://brand.naver.com/pulmuone_cooking/products/8747852688?NaPm=ct%3Dlv23ppfs%7Cci%3D228ede1b21102de766cb34685a0f250f8cc30ef1%7Ctr%3Dsbsh%7Csn%3D976366%7Cic%3D%7Chk%3D76829ef6c46b725d2e63336464734caa097879a8"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240412_1/a86902f9-5b59-41d2-ad8b-917b243665a5.jpg?type=f294_378"
+                                                    alt="직장인들 15+15, 맛있어서 또사요">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://skanskin.kr/product/detail.html?product_no=465&cate_no=23&display_group=1&utm_source=Shoppingblock&utm_medium=main&utm_campaign=%ED%95%AB%EC%95%84%EC%9D%B4%ED%85%9C&utm_content=1%EB%A7%8C%EC%9B%90%EB%8C%80_%EB%B3%B4%EB%8B%88%ED%83%80%ED%86%A0%EB%84%88_%EC%A2%85%EA%B2%B0%ED%85%9C&utm_term=%EB%A9%94%EC%9D%B8&NaPm=ct%3Dlv25adk8%7Cci%3Dacf85ff85ad224796d7e07e346dfc3546694242e%7Ctr%3Dsbsh%7Csn%3D2095618%7Cic%3D%7Chk%3Daba550879baacbe9849b15387b86b98f9cc330f8"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>모공축소 종결템</p>
+                                                <p>마지막 1만원대!</p>
+                                            </a>
+                                            <a href="https://skanskin.kr/product/detail.html?product_no=465&cate_no=23&display_group=1&utm_source=Shoppingblock&utm_medium=main&utm_campaign=%ED%95%AB%EC%95%84%EC%9D%B4%ED%85%9C&utm_content=1%EB%A7%8C%EC%9B%90%EB%8C%80_%EB%B3%B4%EB%8B%88%ED%83%80%ED%86%A0%EB%84%88_%EC%A2%85%EA%B2%B0%ED%85%9C&utm_term=%EB%A9%94%EC%9D%B8&NaPm=ct%3Dlv25adk8%7Cci%3Dacf85ff85ad224796d7e07e346dfc3546694242e%7Ctr%3Dsbsh%7Csn%3D2095618%7Cic%3D%7Chk%3Daba550879baacbe9849b15387b86b98f9cc330f8"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240405_6/c2ed1016-db01-4e3f-a7d1-cf8583a9aace.jpg?type=f294_378"
+                                                    alt="모공축소 종결템, 마지막 1만원대!">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://www.obelee.com/?utm_source=%23TrM&utm_medium=CPM&utm_campaign=%EC%8A%A4%ED%94%BC%EC%96%B4%EB%A7%81E&NaPm=ct%3Dlv25d20g%7Cci%3D1e089fca0990042ddc12243d0df10f2ad0105372%7Ctr%3Dsbsh%7Csn%3D811209%7Cic%3D%7Chk%3D96accb4f17a6c23be8b55b85cbc61e469f49ed40"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>화려한 봄 세일</p>
+                                                <p>최대 68%↓특가</p>
+                                            </a>
+                                            <a href="https://www.obelee.com/?utm_source=%23TrM&utm_medium=CPM&utm_campaign=%EC%8A%A4%ED%94%BC%EC%96%B4%EB%A7%81E&NaPm=ct%3Dlv25d20g%7Cci%3D1e089fca0990042ddc12243d0df10f2ad0105372%7Ctr%3Dsbsh%7Csn%3D811209%7Cic%3D%7Chk%3D96accb4f17a6c23be8b55b85cbc61e469f49ed40"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240325_10/44a13c2e-96d7-41f6-a671-b3a6de8080ea.jpg?type=f294_378"
+                                                    alt="화려한 봄 세일 최대 68%↓특가">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://lovelosome.co.kr/?cafe_mkt=ue_naverbox&NaPm=ct%3Dlv25ek0w%7Cci%3D689d9b8af9231472f8abb02fa238c45668ccc080%7Ctr%3Dsbsh%7Csn%3D9610204%7Cic%3D%7Chk%3D6656cf19087e0c74b4daa10bf8cd2c27ea1e603b"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>여름까지 쭉~</p>
+                                                <p>매일 입고 싶어!</p>
+                                            </a>
+                                            <a href="https://lovelosome.co.kr/?cafe_mkt=ue_naverbox&NaPm=ct%3Dlv25ek0w%7Cci%3D689d9b8af9231472f8abb02fa238c45668ccc080%7Ctr%3Dsbsh%7Csn%3D9610204%7Cic%3D%7Chk%3D6656cf19087e0c74b4daa10bf8cd2c27ea1e603b"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240415_16/044b8569-5432-48cb-96d2-7f5950c52823.jpg?type=f294_378"
+                                                    alt="여름까지 쭉~ 매일 입고 싶어!">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://www.queenspider.co.kr/product/detail.html?product_no=14981&cafe_mkt=nvs_hot01&NaPm=ct%3Dlv25fe48%7Cci%3D9e6455e8f1ccfdeddfddf409b224c8124500f233%7Ctr%3Dsbsh%7Csn%3D4576642%7Cic%3D%7Chk%3Dfcd6e6fa65cef1362ad74b8803fde1495ad320b0"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>봄코디 우아하게</p>
+                                                <p>라운딩 스퀘어넥</p>
+                                            </a>
+                                            <a href="https://www.queenspider.co.kr/product/detail.html?product_no=14981&cafe_mkt=nvs_hot01&NaPm=ct%3Dlv25fe48%7Cci%3D9e6455e8f1ccfdeddfddf409b224c8124500f233%7Ctr%3Dsbsh%7Csn%3D4576642%7Cic%3D%7Chk%3Dfcd6e6fa65cef1362ad74b8803fde1495ad320b0"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240416_7/ad47114d-131c-474d-bb23-dc82102e96a7.jpg?type=f294_378"
+                                                    alt="봄코디 우아하게 라운딩 스퀘어넥">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://www.sovomall.co.kr/product/list.html?cate_no=42&cafe_mkt=ue_Nblock01&NaPm=ct%3Dlv25gm3k%7Cci%3D0f20c7165ed82cc53d332f37b28c0cc2cbacc16a%7Ctr%3Dsbsh%7Csn%3D75094%7Cic%3D%7Chk%3D826fde4795835119341cd01f5b2baa89f195bfc5"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>갑자기~확더워</p>
+                                                <p>서둘러준비해요!</p>
+                                            </a>
+                                            <a href="https://www.sovomall.co.kr/product/list.html?cate_no=42&cafe_mkt=ue_Nblock01&NaPm=ct%3Dlv25gm3k%7Cci%3D0f20c7165ed82cc53d332f37b28c0cc2cbacc16a%7Ctr%3Dsbsh%7Csn%3D75094%7Cic%3D%7Chk%3D826fde4795835119341cd01f5b2baa89f195bfc5"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240416_7/d023ac76-7d0d-4a31-8d2b-385cef1b086a.jpg?type=f294_378"
+                                                    alt="갑자기~확더워 서둘러준비해요!">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://coco-marant.co.kr/product/%EC%98%88%EC%81%9C-%EA%B0%80%EC%84%B1%EB%B9%84-%ED%99%88%EC%9B%A8%EC%96%B4-%EC%9A%94%EB%A3%A8%EC%A7%80%EC%A7%80%EB%AF%B8-%EA%BC%AC%EA%B9%94%EA%B3%B0-%ED%8C%8C%EC%9E%90%EB%A7%88-3%EC%A2%85-%EC%84%B8%ED%8A%B8-%EA%BC%AC%EA%B9%94%EA%B3%B0-%ED%95%9C%EC%A0%95%EC%88%98%EB%9F%89-%EA%B0%95%EC%B6%94/11707/category/52/display/1/?cafe_mkt=ue_npc&NaPm=ct%3Dlv25il34%7Cci%3D73bae3a74468f3c42374712fede60c43fd109da4%7Ctr%3Dsbsh%7Csn%3D3051288%7Cic%3D%7Chk%3D38e094c16f44918b19ac7320939ecc67106966d7"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>가성비 홈웨어</p>
+                                                <p>만원대 잠옷세트</p>
+                                            </a>
+                                            <a href="https://coco-marant.co.kr/product/%EC%98%88%EC%81%9C-%EA%B0%80%EC%84%B1%EB%B9%84-%ED%99%88%EC%9B%A8%EC%96%B4-%EC%9A%94%EB%A3%A8%EC%A7%80%EC%A7%80%EB%AF%B8-%EA%BC%AC%EA%B9%94%EA%B3%B0-%ED%8C%8C%EC%9E%90%EB%A7%88-3%EC%A2%85-%EC%84%B8%ED%8A%B8-%EA%BC%AC%EA%B9%94%EA%B3%B0-%ED%95%9C%EC%A0%95%EC%88%98%EB%9F%89-%EA%B0%95%EC%B6%94/11707/category/52/display/1/?cafe_mkt=ue_npc&NaPm=ct%3Dlv25il34%7Cci%3D73bae3a74468f3c42374712fede60c43fd109da4%7Ctr%3Dsbsh%7Csn%3D3051288%7Cic%3D%7Chk%3D38e094c16f44918b19ac7320939ecc67106966d7"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240415_17/c8210258-a746-45dd-b774-af1682a4f89e.jpg?type=f294_378"
+                                                    alt="가성비 홈웨어 만원대 잠옷세트">
+                                            </a>
+                                        </div>
+                                        <div class="shop__item">
+                                            <a href="https://mintedshop.co.kr/product/detail.html?product_no=214&utm_source=naver&utm_medium=shopping&cafe_mkt=nvs_hot15&NaPm=ct%3Dlv25k4n4%7Cci%3D8ec3a41fbc1285d4de75ae5e6aca5084c1b21f6e%7Ctr%3Dsbsh%7Csn%3D6345894%7Cic%3D%7Chk%3D769c023e40a627b7afa67bd686edb198c31984a6"
+                                                class="shop__item-desc" target="_blank" rel="noopener noreferrer">
+                                                <p>상쾌함이</p>
+                                                <p>하루종일 가요~</p>
+                                            </a>
+                                            <a href="https://mintedshop.co.kr/product/detail.html?product_no=214&utm_source=naver&utm_medium=shopping&cafe_mkt=nvs_hot15&NaPm=ct%3Dlv25k4n4%7Cci%3D8ec3a41fbc1285d4de75ae5e6aca5084c1b21f6e%7Ctr%3Dsbsh%7Csn%3D6345894%7Cic%3D%7Chk%3D769c023e40a627b7afa67bd686edb198c31984a6"
+                                                class="shop__item-img" target="_blank" rel="noopener noreferrer">
+                                                <img src="https://s.pstatic.net/shopping.phinf/20240415_28/05685c6b-248b-4d7c-8c42-6bf7667be906.jpg?type=f294_378"
+                                                    alt="상쾌함이 하루종일 가요~">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop__header">
+                                    <div class="shop__header-nav">
+                                        <ul class="shop__header-desc">
+                                            <li>
+                                                <a href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y"
+                                                    target="_blank" rel="noopener noreferrer">오늘의 혜택</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0014614199"
+                                                    target="_blank" rel="noopener noreferrer">
+                                                    <img src="https://s.pstatic.net/shopping.phinf/20230515_2/ec934726-b045-4267-9ef1-398cbb675711.jpg"
+                                                        alt="coupang">
+                                                    S/S 트렌드 패션 <span>UPTO80%OFF</span>, 역대급 아울렛 최대80%할인
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shop__footer">
+                                    <div class="shop__footer-page">
+                                        <button class="shop__footer-prev" type="button"></button>
+                                        <button class="shop__footer-desc" type="button"><span>쇼핑아이템</span>더보기
+                                            1<span>/13</span></button>
+                                        <button class="shop__footer-next" type="button"></button>
+                                    </div>
+                                    <div class="shop__footer-ad">
+                                        <span>AD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="left__content left__content--recomend">
+                        <ul class="tab__menu">
+                            <li class="tab__btn">
+                                <button type="button" id="tab__active">추천 · 구독</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">자동차</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">웹툰</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">패션뷰티</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">레시피</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">리빙</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">책방</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">지식+</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">건강</button>
+                            </li>
+                            <li class="tab__btn">
+                                <button type="button">게임</button>
+                            </li>
+                        </ul>
+                        <div class="tab__content">
+                            <div class="tab__item tab__item-recomend">
+                                <div class="recomend__header">
+                                    <div class="recomend__header-nav">
+                                        <ul class="recomend__header-desc">
+                                            <li class="recomend__header-active">
+                                                <a href="#">전체</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">인기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">동물</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">여행</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">연애결혼</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">영화</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">육아</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="recomend__header-home">
+                                            <li>
+                                                <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+                                                    target="_blank" rel="noopener noreferrer">구독홈</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="recomend__content-1">
+                                    <li>
+                                        <a href="https://happybean.naver.com/fundings/detail/F1288?p=p&s=nmrp"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240416_138%2F1713236244346ocrBi_PNG%2F%25A9%25E1%25AB%25E1%25B3%25E1.png%3Ftype%3Df464_260%22&type=nf365_240&service=navermain"
+                                                    alt="집에서 간편하게 만드는 친환경 퇴비">
+                                            </div>
+                                            <strong class="recomend__content--desc">집에서 간편하게 만드는 친환경 퇴비</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240325_240%2F1711348589164dAaUy_PNG%2F0.ci.png%22&type=nf40_40&service=navermain"
+                                                        alt="손끋비">
+                                                </span>
+                                                <span>손끋비</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/papasmuff/223332654490?isInf=true"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDAxMjVfNzkg%2FMDAxNzA2MTIxODk4NDc5.cGD3iYLV2iMS0WdE8V_xauOS4lTJO8MnM6Fz3g2IHugg.yGo9fBUu1wOJu0N600m6k1Yn5LLD_fqE9mzjWKfpjtgg.JPEG%2Fimage_750x420.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="양배추와 사과 이렇게 드시면 5kg 금방 빠져유!">
+                                            </div>
+                                            <strong class="recomend__content--desc">양배추와 사과 이렇게 드시면 5kg 금방 빠져유!
+                                                다이...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA2MThfMTcy%2FMDAxNjU1NTYyMDQzNjQ5.ZxOAVCywQPMpQDFq30seeZECCShmtqIg76yQPgWxGR8g.B7k4aF8eK-BuTl-J12ph7l3c8RJVphxVBQGLSZXLeWEg.PNG.papasmuff%2F%25EC%2595%2584%25EC%259E%25AC%25EC%2583%2588%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%258022.png%2F%25EC%2595%2584%25EC%259E%25AC%25EC%2583%2588%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%258022.png%22&type=nf96_96&service=navermain"
+                                                        alt="야채주부">
+                                                </span>
+                                                <span>야채주부</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/gguu1029/223417433599?isInf=true"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDA0MTZfMjU2%2FMDAxNzEzMjU4NTMzNTQw.XB8XAf-TzAtbVcWR5uByQJ3R01F0S9IcMl0xfsZzGK8g.aOpEPTTKiUavQ_G3ljU_pLd-6htiq3z4-Xzx41X8ZAEg.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="요즘 인기 급상승! 버뮤다 팬츠 코디 모음">
+                                            </div>
+                                            <strong class="recomend__content--desc">요즘 인기 급상승! 버뮤다 팬츠 코디 모음 zip</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA1MTJfMTU3%2FMDAxNjUyMzU3Njc5NTc3.b5bNuxPVyuqyP2ayQ0UR0EWDxwVJeAt_v-VClf1v08Mg.3uQvXmZgRtoQzLHYLN9p-KdMmlZQl4CoPa5KFmh3i84g.PNG.gguu1029%2FprofileImage.png%22&type=nf96_96&service=navermain"
+                                                        alt="걸스픽">
+                                                </span>
+                                                <span>걸스픽</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/kdww1203/223410231034?isInf=true"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDA0MDlfMjI3%2FMDAxNzEyNjM1OTIwOTM2.6K1AoZ9a7kvuCzvdP3qNAWElxA0OFF0UWijyvML9_vQg.B9373TkgDhPmt3ulU_7l6GNAd-a76D0jgUMApAn3IBgg.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="코너의 게임블로그 젤다의 전설 왕국의 눈물">
+                                            </div>
+                                            <strong class="recomend__content--desc">[코너의 게임블로그]젤다의 전설 왕국의 눈물,
+                                                유니클...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2F20130712_297%2Fkdww1203_1373617390108UF1iB_JPEG%2F1336641465107.jpg%22&type=nf96_96&service=navermain"
+                                                        alt="코너">
+                                                </span>
+                                                <span>코너</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://happybean.naver.com/fundings/detail/F1279?p=p&s=nmrp"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240416_198%2F1713236430216hKI5Y_PNG%2F%25B5%25E1%25B5%25E12.png%3Ftype%3Df464_260%22&type=nf365_240&service=navermain"
+                                                    alt="티타임에 곁들이기 딱 좋은 버터 쿠키 추천">
+                                            </div>
+                                            <strong class="recomend__content--desc">티타임에 곁들이기 딱 좋은 버터 쿠키 추천</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240313_164%2F1710315819818RQLgR_PNG%2F0.CI.png%22&type=nf40_40&service=navermain"
+                                                        alt="우리밀">
+                                                </span>
+                                                <span>우리밀</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://happybean.naver.com/fundings/detail/F1290?p=p&s=nmrp"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240328_62%2F1711595803334y9hTJ_JPEG%2F0.%25B5%25E1%25B3%25E1%25B3%25E1%25A5%25E1%25B7%25E1%25A6%25E1%25B5%25E1.jpg%3Ftype%3Df464_260%22&type=nf365_240&service=navermain"
+                                                    alt="무설탕 시럽으로 건강하게 즐기는 밀크티">
+                                            </div>
+                                            <strong class="recomend__content--desc">무설탕 시럽으로 건강하게 즐기는 밀크티</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fhappybean-phinf.pstatic.net%2F20240328_43%2F1711595939796Veolp_JPEG%2F0.ci.jpg%22&type=nf40_40&service=navermain"
+                                                        alt="아치미당">
+                                                </span>
+                                                <span>아치미당</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://post.naver.com/viewer/postView.naver?memberNo=202156&volumeNo=37531030&isInf=true"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDAzMjVfMjIw%2FMDAxNzExMzY1NTg3MTk5.wTP8LXk1K6Qf2xxZXEhgif8Fi3j-pP5QHykKq8FNZRkg.l89-mYn47jT_xAxlfd5kIhzbW_oNhFeaNW6A-h6ECA0g.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="지인들은 말렸지만 부부가 이 단독주택을 택한 이유...">
+                                            </div>
+                                            <strong class="recomend__content--desc">지인들은 말렸지만 부부가 이 단독주택을 택한
+                                                이유...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fpost.phinf%2FMjAxNzEyMTNfMjI2%2FMDAxNTEzMTUzMDg5ODY1.zVq2kRQtAi5it-sCrIzS1meRSZtk67kSuYEixv5MHJcg.I7iDCd0AB6nN31zV0dRFdX8M4Ey8seTGTQ4mZUcXxGUg.PNG%2Fpost_932340739798048175.png%3Ftype%3Df200_200%22&type=nf96_96&service=navermain"
+                                                        alt="오늘의집">
+                                                </span>
+                                                <span>오늘의집</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/wlq3494/223368438648?isInf=true" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDAyMjlfMjI3%2FMDAxNzA5MTQ5NDE3NTQ2.mhgCAwxxhuOEYOtt7Jr3D970LnPg08W93uJG8xZi0Nkg._Zm0kG3KAibKhjxHbbvoL5XBl-R9dakXaVI7y7pdCJog.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="또 가격 낮췄다 KG모빌리티 토레스 EVX">
+                                            </div>
+                                            <strong class="recomend__content--desc">"또 가격 낮췄다" KG모빌리티(KGM) 토레스 EVX
+                                                '200...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA4MjRfMTY5%2FMDAxNjYxMzIzMDU3MDU2.OpuphyixmBSHuQ2yOqmsg9-3Gj1TLYidXTEQ1uHD_ggg.qk7Oshz8ZQeXJjZxtzaKPL4oEddlQdPfpCmK5EWlvGMg.JPEG.wlq3494%2FprofileImage.jpg%22&type=nf96_96&service=navermain"
+                                                        alt="유니지">
+                                                </span>
+                                                <span>유니지</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/jeunkim/223418297281?isInf=true" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDA0MTdfMzMg%2FMDAxNzEzMzM5NDM4ODUz.Ycmfs5S1Dyrh9AFBCD78vBU1qJFj_Z_VzaZ8GeTUSA0g.lOVaXSrswaS9wdVlULlqyhsysOxnWwDx8YM2bpL9184g.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="주식시장이 10배거가 되는데 얼마나 걸릴까?">
+                                            </div>
+                                            <strong class="recomend__content--desc">주식시장이 "10배거"가 되는데 얼마나 걸릴까?</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMzAxMDZfMjIz%2FMDAxNjcyOTYzOTcxNjEz.CHm7kV8v0NTkaNhJm0OzljJ_7qycMQYdHk0kdTq7qhgg.oLwKWfyLMSJqi62spXhF4o8H3PG86cw0qRMoVvC5ej4g.GIF.jeunkim%2F017.gif%2F017.gif%22&type=nf96_96&service=navermain"
+                                                        alt="피우스">
+                                                </span>
+                                                <span>피우스</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/treewg/223366419162?isInf=true" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDAyMjdfNDEg%2FMDAxNzA5MDE4OTU5MTk0.c5pIxy9lydCh7LFuJxqTiGYwKU05MeitHRWmeHnswecg.v-s3yQJ9ARRQr5R1vHgFBCXlMr08rpkhUTB0ue2axlQg.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="강심장vs오정연 럭셔리 아파트로 수십억 번 사연">
+                                            </div>
+                                            <strong class="recomend__content--desc">강심장vs오정연, 럭셔리 아파트로 수십억 번
+                                                사연(ft ...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAxODEwMzBfMTEx%2FMDAxNTQwODYyNjAyNTkx.OOlnc-zzAMsX6NhtXUoQaHBhbgbCxNqM-M-9Mi_eKQwg.r4koPBVrBcfr2efAG-FRQ82r2Cr-y2ICIqxoXVicF_Ag.JPEG.treewg%2FprofileImage.jpg%22&type=nf96_96&service=navermain"
+                                                        alt="나무처럼">
+                                                </span>
+                                                <span>나무처럼</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.naver.com/clee20000/223349609286?isInf=true"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDAyMTBfMTQy%2FMDAxNzA3NTMyMjIxOTc4.eHzZeAF10kzpDNI5ZQEjd_fTuwaxqGgpZ7jk9mKUvPYg.VR9PnhWUZ6GHvypbgmKFix4f_jlbX_L5KKSWH5qFPW4g.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="월급쟁이 필수 통장 2가지">
+                                            </div>
+                                            <strong class="recomend__content--desc">월급쟁이 필수 통장 2가지 "무조건 만드세요. 노후
+                                                ...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fblogpfthumb.phinf.naver.net%2FMjAyMjA4MjRfMTk5%2FMDAxNjYxMzAzMTgzMDc4.jlO8Iwqz-Nn-7ZP_W3JznwedNcn-XW84byhxt2sAVZMg.m-ApTXIsbqqMDL_XfVdJV_Ee9xnch4Zq7ZzWtfHitbog.PNG.clee20000%2F%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%2584%25A4%25EC%259E%2584%25EC%25B9%25B4%25EB%2593%259C.png%2F%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%2584%25A4%25EC%259E%2584%25EC%25B9%25B4%25EB%2593%259C.png%22&type=nf96_96&service=navermain"
+                                                        alt="이천희망">
+                                                </span>
+                                                <span>이천희망</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://tv.naver.com/v/49881660" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <div class="recomend__content--img">
+                                                <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fdiscovercrop-phinf.pstatic.net%2F%2FMjAyNDA0MTZfMTM1%2FMDAxNzEzMTk3MzI2NTk4.6EVdkj-SNHE4nWDk3rtOdMNTBDdZ3IlTJMgfMkTrvMMg.zSVxWagut8eL3DZKznvwpsWM2_jnGbN1_QaWPhrW3Ncg.JPEG%2Fimage_374x246.jpg%22&type=nf365_240&service=navermain"
+                                                    alt="결국 상담 포기한 현철 더 멀어진 채 끝나버린 상담">
+                                            </div>
+                                            <strong class="recomend__content--desc">결국 상담 포기한 현철 더 멀어진 채 끝나버린
+                                                상담...</strong>
+                                            <div class="recomend__content--profile">
+                                                <span>
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240213_53%2Fg6ptf_1707805048819rNhsj_PNG%2F2024013116161121503471282683009.png%22&type=nf96_96&service=navermain"
+                                                        alt="조선의 사랑꾼">
+                                                </span>
+                                                <span>조선의 사랑꾼</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="recomend__content-2">
+                                    <div class="recomend__content--header">
+                                        <strong>매일 찾는 짧은 즐거움</strong>
+                                    </div>
+                                    <ul class="recomend__content--list">
+                                        <li>
+                                            <a href="https://m.naver.com/shorts/?mediaId=4D76B2DB0CE921A5B90D9CA293D49D830028&serviceType=SPORTS&recType=AIRS&h=V1.f1fec47041edf40a"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <div class="recomend__content--img">
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240411_45%2FHWu7G_1712790333632ldajg_JPEG%2Fbca57221-f78e-11ee-8aae-a0369ffabcbc_08.jpg%22&type=f216_324&service=navermain"
+                                                        alt="4R 17번홀 김민선7 티샷">
+                                                </div>
+                                                <div class="recomend__content--desc">
+                                                    <strong>4R 17번홀 김민선7 티샷 [두산...</strong>
+                                                </div>
+                                                <div class="recomend__content--profile">
+                                                    <p>KLPGA 네이버스...</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://m.naver.com/shorts/?mediaId=E3FD4A58E3C89E0DC9F9A138C997517B84EE&serviceType=SPORTS&recType=AIRS&h=V1.6559ccd1e9cdbef2"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <div class="recomend__content--img">
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240416_77%2FkkkzF_17132186150030ckwW_JPEG%2Fe867c75e-fb73-11ee-be35-80615f0bcca8_03.jpg%22&type=f216_324&service=navermain"
+                                                        alt="푸스카스 상, 손흥민의 그 골">
+                                                </div>
+                                                <div class="recomend__content--desc">
+                                                    <strong>푸스카스 상, 손흥민의 그 골😎</strong>
+                                                </div>
+                                                <div class="recomend__content--profile">
+                                                    <p>SPURS TV</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://m.naver.com/shorts/?mediaId=6D3EBBDD45EEAC6F50D6F54C8DA7F6C7C90B&serviceType=MOMENT&recType=AIRS&blogId=gooseul1985&docNo=4292029&h=V1.a1efb7fad66f5cbf"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <div class="recomend__content--img">
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240413_198%2Feo4Ex_1712988460383fm0t5_JPEG%2F34336FF2-994C-4454-8A1D-9DD0797EA16B.jpg%22&type=f216_324&service=navermain"
+                                                        alt="간호사를 아내로 둔 남편의 센스">
+                                                </div>
+                                                <div class="recomend__content--desc">
+                                                    <strong>간호사를 아내로 둔 남편의 ...</strong>
+                                                </div>
+                                                <div class="recomend__content--profile">
+                                                    <p>구슬언니</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://m.naver.com/shorts/?mediaId=A8854E6B594D5B23DEC89C7C5F97885BFB1D&serviceType=NTV&recType=AIRS&h=V1.bdf30822888f1b22"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <div class="recomend__content--img">
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240415_133%2Fwb8tq_17131751704987zREL_JPEG%2F0B755C58-1BB1-4441-9889-3E78B8097B6C.jpg%22&type=f216_324&service=navermain"
+                                                        alt="나만 몰랐던 지퍼백 활용법">
+                                                </div>
+                                                <div class="recomend__content--desc">
+                                                    <strong>나만 몰랐던 지퍼백 활용법 #...</strong>
+                                                </div>
+                                                <div class="recomend__content--profile">
+                                                    <p>살림남 The Life</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://m.naver.com/shorts/?mediaId=7023306168D26A2772AA5D241B37B14007B5&serviceType=SPORTS&recType=AIRS&h=V1.8f55f4c49f02baad"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <div class="recomend__content--img">
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240417_108%2FwYIuY_1713307210393itXRC_JPEG%2F1f269fdf-fc42-11ee-8462-a0369ffdf818_03.jpg%22&type=f216_324&service=navermain"
+                                                        alt="이 연습하고 벙커샷 10배 좋아졌어요">
+                                                </div>
+                                                <div class="recomend__content--desc">
+                                                    <strong>이 연습하고 벙커샷 10배 좋...</strong>
+                                                </div>
+                                                <div class="recomend__content--profile">
+                                                    <p>박치우골프TV</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://m.naver.com/shorts/?mediaId=EE44ECB7EB65EF2C0F76ED51FD7A4A9AC4E9&serviceType=NTV&recType=AIRS&h=V1.c41b920c062add30"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <div class="recomend__content--img">
+                                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20240417_206%2FhqmG2_1713333107375K8l2B_JPEG%2F3412ccb7-fc7e-11ee-a16f-b4055dcdffa2_01.jpg%22&type=f216_324&service=navermain"
+                                                        alt="온앤오프 와이엇 선배님">
+                                                </div>
+                                                <div class="recomend__content--desc">
+                                                    <strong>온앤오프 와이엇 선배님 원 ...</strong>
+                                                </div>
+                                                <div class="recomend__content--profile">
+                                                    <p>NOWADAYS(나...</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="recomend__content--next" type="button"></button>
+                                    <div class="recomend__footer">
+                                        <a class="recomend__footer-more" href="#">
+                                            <span>펼쳐보기</span>
+                                            <span>+</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </article>
                 </div>
                 <div class="main__right">
                     <article class="right__content right__content--login">
@@ -300,28 +1220,34 @@
                         </div>
                         <div class="widget__main">
                             <section class="widget__item widget__item--cal">
-                                <div class="item__title">
-                                    <p>캘린더</p>
-                                </div>
-                                <div class="item__content">
-                                    <span class="item__content--day">3.26</span>
-                                    <span class="item__content--week">화</span>
-                                </div>
-                                <div class="item__login">
-                                    <a
-                                        href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/?to=widget">로그인하기</a>
-                                </div>
+                                <a class="widget__item-box"
+                                    href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/?to=widget"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <div class="item__title">
+                                        <p>캘린더</p>
+                                    </div>
+                                    <div class="item__content">
+                                        <span class="item__content--day">4.5</span>
+                                        <span class="item__content--week">금</span>
+                                    </div>
+                                    <div class="item__login">
+                                        <p>로그인하기</p>
+                                    </div>
+                                </a>
                             </section>
                             <section class="widget__item widget__item--memo">
-                                <div class="item__title">
-                                    <p>메모</p>
-                                </div>
-                                <p class="item__content1"></p>
-                                <p class="item__content2"></p>
-                                <div class="item__login">
-                                    <a
-                                        href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/?to=widget">로그인하기</a>
-                                </div>
+                                <a class="widget__item-box"
+                                    href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/?to=widget"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <div class="item__title">
+                                        <p>메모</p>
+                                    </div>
+                                    <p class="item__content1"></p>
+                                    <p class="item__content2"></p>
+                                    <div class="item__login">
+                                        <p>로그인하기</p>
+                                    </div>
+                                </a>
                             </section>
                             <section class="widget__item widget__item--papago">
                                 <a href="https://papago.naver.com/?sk=ko&st=&tk=en" target="_blank"
@@ -332,14 +1258,18 @@
                                 </a>
                             </section>
                             <section class="widget__item widget__item--eng">
-                                <a href="#" class="item__title">영어사전</a>
-                                <p class="item__text"></p>
-                                <p class="item__content"></p>
-                                <p class="item__content"></p>
-                                <p class="item__content"></p>
-                                <p class="item__content"></p>
-                                <p class="item__content"></p>
-                                <a href="#" class="item__btn"></a>
+                                <a class="widget__item-box" href="https://en.dict.naver.com/#/mini/main" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <p class="item__title">영어사전</p>
+                                    <p class="item__text"></p>
+                                    <p class="item__content"></p>
+                                    <p class="item__content"></p>
+                                    <p class="item__content"></p>
+                                    <p class="item__content"></p>
+                                    <p class="item__content"></p>
+                                    <p class="item__content"></p>
+                                    <button type="button" class="item__btn"></button>
+                                </a>
                             </section>
                             <section class="widget__item widget__item--vibe">
                                 <div class="item__title">
